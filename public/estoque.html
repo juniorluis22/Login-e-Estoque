@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/styleEstoque.css">
+    <title>Estoque</title>
+</head>
+
+<body>
+
+    <section>
+
+        <header>
+            <div class="bar">
+                <div class="logo">
+                    <img src="./IMG/logo.png" alt="">
+                </div>
+                <div class="text">
+                    <h3>Apex Wolf</h3>
+                </div>
+                <div></div>
+            </div>
+        </header>
+
+        <main>
+            <div class="text-estoque-menu">
+                <div class="text-produto">
+                    <h3>Produtos</h3>
+                </div>
+
+                <div class="usuario">Usuario:</div>
+            </div>
+            <div class="area-produto">
+                <div class="main-produto">
+                    <div class="area-text-adicionar" id="adicionar-id">
+                        <div class="text-id">
+                            ID
+                        </div>
+                    </div>
+                    <div class="area-text-adicionar">
+                        <div class="text-produto" id="adicionar-pr">
+                            Nome do Produto
+                        </div>
+                    </div>
+                    <div class="area-text-adicionar">
+                        <div class="text-data" id="adicionar-data">
+                            Data
+                        </div>
+
+                    </div>
+                    <div class="area-text-adicionar" id="adicionar-qua">
+                        <div class="text-quantidade">
+                            Quantidade
+                        </div>
+
+                    </div>
+                    <div class="area-text-adicionar">
+                        <div class="text-valor" id="adicionar-valor">
+                            Valor
+                        </div>
+
+                    </div>
+                    <div class="button-adicionar">
+                        <button type="button">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="display-adicionar">
+                <div class="display-area">
+                    <div class="tex-deisplay">
+                        <h3>Adicionar Produto</h3>
+
+                    </div>
+                    <div class="input-adicionar">
+                        <form action="">
+                            <div class="id">
+                                <label for="id">Id:</label>
+                                <input type="text" id="id">
+                            </div>
+
+                            <div class="nome-do-produto">
+                                <label for="produto">Nome do Produto:</label>
+                                <input type="text" id="produto">
+                            </div>
+
+                            <div class="quantidade">
+                                <label for="quantidade">Quantidade:</label>
+                                <input type="number" id="quantidade">
+                            </div>
+
+                            <div class="data">
+                                <label for="data">Data:</label>
+                                <input type="date" id="data">
+                            </div>
+
+                            <div class="valor">
+                                <label for="valor">Valor:</label>
+                                <input type="number" id="valor">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="buttons-footer">
+                        <button class="button-adicionar-produto">Adicionar</button>
+                        <button class="button-voltar">voltar</button>
+
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            &copy; Júnior Magalhães 2024
+        </footer>
+
+    </section>
+
+
+
+
+    <script src="./JS/scriptEstoque.js"></script>
+    
+
+
+
+</body>
+
+</html>

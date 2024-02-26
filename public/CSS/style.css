@@ -1,0 +1,347 @@
+*{
+   box-sizing: border-box;
+   margin: 0;
+   font-family: "Montserrat", sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(215, 209, 209);
+    min-height: 100vh;
+    width: 100vw;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    width: auto;
+    border-radius: 1rem;
+    background-color: rgb(179, 179, 179);
+    box-shadow: 1px 1px 8px rgb(0, 0, 0);
+    border-bottom-right-radius: 10rem;
+
+}
+
+
+
+.left{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:20rem;
+    height: 37rem;
+    border-radius: 1rem;
+    border-bottom-right-radius: 0rem;
+    backdrop-filter:blur(55px);
+}
+
+.area-logo-mobi{
+    display: none;
+
+}
+.header-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 10rem;
+    color: rgb(0, 0, 0);
+    text-shadow: 0.1em 0.1em 0.3em rgb(66, 66, 66);
+}
+
+
+.input--area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 2rem;
+}
+
+form {
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.email-login input, .senha-login input{
+    margin-left: 0.5rem;
+    border: none;
+    width: 13rem;
+    border-radius: 0.8rem;
+    outline: none;
+    padding: 0.4rem;
+    box-shadow: 1px 1px 5px #0c0909;
+}
+
+.salvar-senha {
+    align-items: flex-start;
+    align-items: center;
+    display: flex;
+    margin-left: 3.5rem;
+    gap: 0.5rem;
+
+}
+
+
+.email-login  input:hover, .senha-login  input:hover{
+    transform: scale(1.01);
+
+}
+
+label{
+    text-align: right;
+    font-size: 0.8rem;
+}
+
+
+.button{
+    width: 4rem;
+    height: 2rem;
+    border-radius: 3rem;
+    margin-top: 1rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px #0c0909;
+}
+
+.button:hover{
+    background-color: rgba(34, 82, 49, 0.606);
+    transform: scale(1.1);
+}
+
+.copy-mobi{
+    display: none;
+
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:35rem;
+    height: inherit;
+    background-color: rgb(42, 72, 72);
+    backdrop-filter:blur(2px);
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 10rem;
+    border-top-left-radius:12rem;
+    box-shadow: 1px 1px 8px rgb(0, 0, 0);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15rem;
+    margin-top: 2rem;
+}
+
+.logo img{
+    width: 12rem;
+    height: 11rem;
+    filter: drop-shadow(1px 1px 10px #0c0909);
+}
+.text-right{
+    margin-top: 6rem;
+
+}
+
+.text-right h3{
+    color: rgb(213, 213, 213);
+    text-shadow: 0.1em 0.1em 0.2em black;
+    font-size: 3.5rem;
+
+}
+
+footer{
+    margin-top: 5rem;
+    color: rgb(213, 213, 213);
+    font-size: 0.7rem;
+
+}
+
+
+ .erro-msg{
+    margin: 0;
+    margin-top: 0.1rem;
+    
+    display: none;
+
+    width: 65%;
+    height: 1rem;
+    background-color: rgb(42, 72, 72);
+
+    margin-left: 4rem;
+    border-bottom-right-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+
+    color: rgb(213, 213, 213);
+    font-size: 0.6rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+
+@media (max-width:1024px){
+    section{
+        width: 90vw;
+       
+    }
+
+
+    .input{
+        display: block;
+        align-items: flex-start;
+        text-align: start;
+        padding: 0.1rem;
+        margin-left: 1rem;
+    }
+    .input input{
+       width:  12rem;
+       margin-right: 1rem;
+
+    }
+
+    .right{
+        width: 80vw;
+    }
+    .text-right h3{
+        font-size: 2.3rem;
+
+    }
+
+    .logo img{
+        width: 15vw;
+        height: 14vw;
+    }
+
+    footer{
+        font-size: 0.4rem;
+    }
+
+    .erro-msg{
+        margin-top: 0.1rem;
+        height: 1rem;
+        margin-left: 1rem;
+        font-size: 0.5rem;
+        
+    
+    }
+
+
+}
+
+@media(max-width: 880px){
+
+    section{
+        width: 23rem;
+        background-color: rgb(42, 72, 72);
+        border-radius: 1rem;
+    }
+
+    .area-logo-mobi{
+        display: block;
+        height: 10vw;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-right{
+        margin-top: 1rem;
+    }
+    .logo {
+        height: 10rem;
+        margin-top: 0;
+    }
+    .logo img{
+        width: 8rem;
+        height: 7rem;
+        
+    }
+    .header-area .text{
+        font-size:1.6rem;
+
+    }
+   
+    .right{
+        
+        display: none;
+        
+
+    }
+    .header-area{
+        margin: 0;
+        height:12rem ;
+        
+
+    }
+    .text{
+        font-size: 3vw;
+        margin-bottom: 2rem;
+    }
+
+    .input--area{
+       margin: 0;
+       width: 12rem;
+       height: auto;
+       margin-top: 1rem;
+       align-items: center;
+       justify-content: center;
+    }
+
+    .button{
+        margin-bottom: 2rem;
+    }
+
+    form{
+       width: auto;
+       
+    }
+
+   
+    input{
+        display: block;
+
+    }
+    .copy-mobi{
+        display: block;
+        font-size: 0.6rem;
+        margin-bottom: 0.5rem;
+
+    }
+    .left{
+        height: auto;
+        margin: 0;
+        backdrop-filter:blur(0px);
+        background-color: rgb(179, 179, 179);
+        border-top-right-radius: 0rem;
+        border-bottom-right-radius:0rem ;
+    }
+
+    .erro-msg{
+        margin-top: 0.1rem;
+        height: 1rem;
+        margin-left: 1rem;
+        font-size: 0.5rem;
+        
+    
+    }
+}
+
